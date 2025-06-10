@@ -811,7 +811,7 @@
 
   // Wanhao Duplicator i3
   #define DEFAULT_bedKp 249.52
-  #define DEFAULT_bedKi 47.89
+  #define DEFAULT_bedKi  47.89
   #define DEFAULT_bedKd 325.03
 
   // FIND YOUR OWN: "M303 E-1 C8 S90" to run autotune on the bed at 90 degreesC for 8 cycles.

@@ -822,12 +822,12 @@
 
   // 24V 500W silicone heater on to 4mm glass CartesioW
   #define DEFAULT_bedKp 390
-  #define DEFAULT_bedKi 70
+  #define DEFAULT_bedKi  70
   #define DEFAULT_bedKd 546
 
   // 24V 250W silicone heater on to 4mm glass CartesioM
   //#define DEFAULT_bedKp 303
-  //#define DEFAULT_bedKi 42
+  //#define DEFAULT_bedKi  42
   //#define DEFAULT_bedKd 539
 
   // FIND YOUR OWN: "M303 E-1 C8 S90" to run autotune on the bed at 90 degreesC for 8 cycles.

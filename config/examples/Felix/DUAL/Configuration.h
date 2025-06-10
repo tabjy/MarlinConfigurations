@@ -811,7 +811,7 @@
 
   // Felix Foil Heater
   #define DEFAULT_bedKp 103.37
-  #define DEFAULT_bedKi 2.79
+  #define DEFAULT_bedKi   2.79
   #define DEFAULT_bedKd 956.94
 
   // FIND YOUR OWN: "M303 E-1 C8 S90" to run autotune on the bed at 90 degreesC for 8 cycles.

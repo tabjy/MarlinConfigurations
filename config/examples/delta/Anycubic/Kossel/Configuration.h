@@ -832,12 +832,12 @@
   // from pid autotune. "M303 E-1 C8 S60" to run autotune on the bed at 60 degreesC for 8 cycles
   #if ANYCUBIC_KOSSEL_ENABLE_BED == 1
     #define DEFAULT_bedKp 374.03
-    #define DEFAULT_bedKi 72.47
+    #define DEFAULT_bedKi  72.47
     #define DEFAULT_bedKd 482.59
   #elif ANYCUBIC_KOSSEL_ENABLE_BED == 2
     // TODO get real PID values for Ultrabase Bed
     #define DEFAULT_bedKp 374.03
-    #define DEFAULT_bedKi 72.47
+    #define DEFAULT_bedKi  72.47
     #define DEFAULT_bedKd 482.59
   #endif
 

@@ -823,7 +823,7 @@
 
   // RigidBot, from pid autotune
   #define DEFAULT_bedKp 355
-  #define DEFAULT_bedKi 66.5
+  #define DEFAULT_bedKi  66.5
   #define DEFAULT_bedKd 480
 
   // FIND YOUR OWN: "M303 E-1 C8 S90" to run autotune on the bed at 90 degreesC for 8 cycles.

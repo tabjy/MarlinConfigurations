@@ -814,7 +814,7 @@
   // ANET A8
   // original Bed + 0.3mm Heat conducting into 4mm borosilicate (PID-Autotune: M303 E-1 S60 C5):
   #define DEFAULT_bedKp 295.00
-  #define DEFAULT_bedKi 35.65
+  #define DEFAULT_bedKi  35.65
   #define DEFAULT_bedKd 610.21
 
   // FIND YOUR OWN: "M303 E-1 C8 S90" to run autotune on the bed at 90 degreesC for 8 cycles.

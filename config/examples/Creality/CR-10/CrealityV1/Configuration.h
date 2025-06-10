@@ -811,7 +811,7 @@
 
   // Stock CR-10 Bed Tuned for 70C
   #define DEFAULT_bedKp 426.68
-  #define DEFAULT_bedKi 78.92
+  #define DEFAULT_bedKi  78.92
   #define DEFAULT_bedKd 576.71
 
   // FIND YOUR OWN: "M303 E-1 C8 S90" to run autotune on the bed at 90 degreesC for 8 cycles.

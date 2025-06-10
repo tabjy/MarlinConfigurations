@@ -870,17 +870,17 @@
   #if ANY(U30, LK2, LK4)
     // From M303 command for Alfawise U30
     #define DEFAULT_bedKp 338.46
-    #define DEFAULT_bedKi 63.96
+    #define DEFAULT_bedKi  63.96
     #define DEFAULT_bedKd 447.78
   #elif ANY(U20, LK1)
     // From M303 command for Alfawise U20
-    #define DEFAULT_bedKp 841.68
-    #define DEFAULT_bedKi 152.12
+    #define DEFAULT_bedKp  841.68
+    #define DEFAULT_bedKi  152.12
     #define DEFAULT_bedKd 1164.25
   #elif ANY(U20_PLUS, LK1_PLUS)
     // These PID settings MUST be updated
-    #define DEFAULT_bedKp 841.68
-    #define DEFAULT_bedKi 152.12
+    #define DEFAULT_bedKp  841.68
+    #define DEFAULT_bedKi  152.12
     #define DEFAULT_bedKd 1164.25
   #endif
 

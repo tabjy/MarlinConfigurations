@@ -813,7 +813,7 @@
   // from FOPDT model - kp=.39 Tp=405 Tdead=66, Tc set to 79.2, aggressive factor of .15 (vs .1, 1, 10)
   // Creality Stock - Ender-3 Max
   #define DEFAULT_bedKp 162.06
-  #define DEFAULT_bedKi 17.89
+  #define DEFAULT_bedKi  17.89
   #define DEFAULT_bedKd 978.75
 
   // FIND YOUR OWN: "M303 E-1 C8 S90" to run autotune on the bed at 90 degreesC for 8 cycles.

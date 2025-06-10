@@ -815,14 +815,14 @@
   //#define PID_BED_DEBUG     // Print Bed PID debug data to the serial port. Use 'M303 D' to enable/disable.
 
   // 24V 360W silicone heater from NPH on 3mm borosilicate (TAZ 2.2+)
-  #define DEFAULT_bedKp 20
-  #define DEFAULT_bedKi 5
+  #define DEFAULT_bedKp  20
+  #define DEFAULT_bedKi   5
   #define DEFAULT_bedKd 275
 
   // 12v 400W silicone heater from QUDB into 3mm borosilicate (TAZ 1.0+)
   // from pidautotune
-  //#define DEFAULT_bedKp 650
-  //#define DEFAULT_bedKi 60
+  //#define DEFAULT_bedKp  650
+  //#define DEFAULT_bedKi   60
   //#define DEFAULT_bedKd 1800
 
   // FIND YOUR OWN: "M303 E-1 C8 S90" to run autotune on the bed at 90 degreesC for 8 cycles.

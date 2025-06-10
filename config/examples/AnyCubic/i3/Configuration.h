@@ -811,7 +811,7 @@
 
   // Anycubic I3 with Ultrabase. 100C and 8 cycles
   #define DEFAULT_bedKp 218.59
-  #define DEFAULT_bedKi 43.04
+  #define DEFAULT_bedKi  43.04
   #define DEFAULT_bedKd 277.56
 
   // FIND YOUR OWN: "M303 E-1 C8 S90" to run autotune on the bed at 90 degreesC for 8 cycles.

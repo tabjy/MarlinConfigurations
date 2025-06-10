@@ -837,7 +837,7 @@
 
   // Original Prusa i3 MK3/S
   #define DEFAULT_bedKp 126.13
-  #define DEFAULT_bedKi 4.30
+  #define DEFAULT_bedKi   4.30
   #define DEFAULT_bedKd 924.76
 
   // FIND YOUR OWN: "M303 E-1 C8 S90" to run autotune on the bed at 90 degreesC for 8 cycles.

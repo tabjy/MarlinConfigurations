@@ -810,8 +810,8 @@
   //#define PID_BED_DEBUG     // Print Bed PID debug data to the serial port. Use 'M303 D' to enable/disable.
 
   // FLSUN QQS-Pro 1.6mm aluminium heater with 4mm lattice glass
-  #define DEFAULT_bedKp 82.98
-  #define DEFAULT_bedKi 15.93
+  #define DEFAULT_bedKp  82.98
+  #define DEFAULT_bedKi  15.93
   #define DEFAULT_bedKd 288.25
 
   // FIND YOUR OWN: "M303 E-1 C8 S90" to run autotune on the bed at 90 degreesC for 8 cycles.

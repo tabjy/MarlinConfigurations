@@ -845,13 +845,13 @@
   // TinyBoy2 heatbed - calculated with PID Autotune and tested
   // "M303 E-1 C8 S75"
   //#define DEFAULT_bedKp 421.80
-  //#define DEFAULT_bedKi 82.51
+  //#define DEFAULT_bedKi  82.51
   //#define DEFAULT_bedKd 539.06
 
   // TinyBoy2 heatbed - same, but with fan @ 25% duty
   // "M303 E-1 C8 S75"
   #define DEFAULT_bedKp 267.54
-  #define DEFAULT_bedKi 52.34
+  #define DEFAULT_bedKi  52.34
   #define DEFAULT_bedKd 341.92
 
   // FIND YOUR OWN: "M303 E-1 C8 S90" to run autotune on the bed at 90 degreesC for 8 cycles.

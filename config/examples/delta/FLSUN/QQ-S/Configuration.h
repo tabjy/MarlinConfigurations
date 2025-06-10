@@ -811,7 +811,7 @@
 
   // FLSUN QQ-S stock 1.6mm aluminium heater with 4mm lattice glass
   #define DEFAULT_bedKp 325.10
-  #define DEFAULT_bedKi 63.35
+  #define DEFAULT_bedKi  63.35
   #define DEFAULT_bedKd 417.10
 
   // FIND YOUR OWN: "M303 E-1 C8 S90" to run autotune on the bed at 90 degreesC for 8 cycles.

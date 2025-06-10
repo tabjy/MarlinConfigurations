@@ -813,8 +813,8 @@
   //#define PID_BED_DEBUG     // Print Bed PID debug data to the serial port. Use 'M303 D' to enable/disable.
 
   // BIQU Hurakan
-  #define DEFAULT_bedKp 68.545
-  #define DEFAULT_bedKi 1.873
+  #define DEFAULT_bedKp  68.545
+  #define DEFAULT_bedKi   1.873
   #define DEFAULT_bedKd 627.184
 
   // FIND YOUR OWN: "M303 E-1 C8 S90" to run autotune on the bed at 90 degreesC for 8 cycles.

@@ -817,7 +817,7 @@
 
   // Overlord Pro heater into 5.5mm aluminium bed, update using M303
   #define DEFAULT_bedKp 253.16
-  #define DEFAULT_bedKi 24.14
+  #define DEFAULT_bedKi  24.14
   #define DEFAULT_bedKd 663.66
 
   // FIND YOUR OWN: "M303 E-1 C8 S90" to run autotune on the bed at 90 degreesC for 8 cycles.

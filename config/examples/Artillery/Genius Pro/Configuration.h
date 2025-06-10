@@ -810,8 +810,8 @@
   //#define PID_BED_DEBUG     // Print Bed PID debug data to the serial port. Use 'M303 D' to enable/disable.
 
   // Genius Pro
-  #define DEFAULT_bedKp 22.14
-  #define DEFAULT_bedKi 1.31
+  #define DEFAULT_bedKp  22.14
+  #define DEFAULT_bedKi   1.31
   #define DEFAULT_bedKd 249.15
 
   // FIND YOUR OWN: "M303 E-1 C8 S90" to run autotune on the bed at 90 degreesC for 8 cycles.

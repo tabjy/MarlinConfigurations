@@ -809,7 +809,7 @@
   //#define PID_BED_DEBUG     // Print Bed PID debug data to the serial port. Use 'M303 D' to enable/disable.
 
   #define DEFAULT_bedKp 151.78
-  #define DEFAULT_bedKi 28.45
+  #define DEFAULT_bedKi  28.45
   #define DEFAULT_bedKd 539.89
 
   // FIND YOUR OWN: "M303 E-1 C8 S90" to run autotune on the bed at 90 degreesC for 8 cycles.

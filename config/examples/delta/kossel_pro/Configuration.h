@@ -816,7 +816,7 @@
   // Kossel Pro heated bed plate with borosilicate glass
   // from pidautotune (M303 E-1 S60 C8)
   #define DEFAULT_bedKp 370.25
-  #define DEFAULT_bedKi 62.77
+  #define DEFAULT_bedKi  62.77
   #define DEFAULT_bedKd 545.98
 
   // FIND YOUR OWN: "M303 E-1 C8 S90" to run autotune on the bed at 90 degreesC for 8 cycles.

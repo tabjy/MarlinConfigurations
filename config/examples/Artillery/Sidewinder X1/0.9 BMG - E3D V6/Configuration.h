@@ -820,13 +820,13 @@
   //#define PID_BED_DEBUG     // Print Bed PID debug data to the serial port. Use 'M303 D' to enable/disable.
 
   // Artillery Sidewinder heated bed at 60C
-  //#define DEFAULT_bedKp 32.49
-  //#define DEFAULT_bedKi 5.29
+  //#define DEFAULT_bedKp  32.49
+  //#define DEFAULT_bedKi   5.29
   //#define DEFAULT_bedKd 133.10
 
   // Artillery Sidewinder heated bed at 100C
-  #define DEFAULT_bedKp 41.68
-  #define DEFAULT_bedKi 6.88
+  #define DEFAULT_bedKp  41.68
+  #define DEFAULT_bedKi   6.88
   #define DEFAULT_bedKd 168.43
 
   // FIND YOUR OWN: "M303 E-1 C8 S90" to run autotune on the bed at 90 degreesC for 8 cycles.

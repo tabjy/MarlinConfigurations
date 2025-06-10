@@ -811,7 +811,7 @@
 
   // Sidewinder X1
   #define DEFAULT_bedKp 244.21
-  #define DEFAULT_bedKi 45.87
+  #define DEFAULT_bedKi  45.87
   #define DEFAULT_bedKd 325.08
 
   // FIND YOUR OWN: "M303 E-1 C8 S90" to run autotune on the bed at 90 degreesC for 8 cycles.

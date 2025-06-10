@@ -809,8 +809,8 @@
   //#define PID_BED_DEBUG     // Print Bed PID debug data to the serial port. Use 'M303 D' to enable/disable.
 
   // KINGROON KP3
-  #define DEFAULT_bedKp 690.34
-  #define DEFAULT_bedKi 111.47
+  #define DEFAULT_bedKp  690.34
+  #define DEFAULT_bedKi  111.47
   #define DEFAULT_bedKd 1068.83
 
   // FIND YOUR OWN: "M303 E-1 C8 S90" to run autotune on the bed at 90 degreesC for 8 cycles.

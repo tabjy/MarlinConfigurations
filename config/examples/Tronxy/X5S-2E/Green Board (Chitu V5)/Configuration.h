@@ -813,7 +813,7 @@
   // Tested with commands: "M304 P100 I20 D500" and "M303 C10 E-1 S65"
     //12V Heated Bed (330x330) Tronxy
   #define DEFAULT_bedKp 344.2
-  #define DEFAULT_bedKi 57.25
+  #define DEFAULT_bedKi  57.25
   #define DEFAULT_bedKd 379.5
 
 #else

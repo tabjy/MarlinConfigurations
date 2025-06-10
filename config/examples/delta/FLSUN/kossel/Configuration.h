@@ -811,7 +811,7 @@
 
   // D-force
   #define DEFAULT_bedKp 22.97
-  #define DEFAULT_bedKi 3.76
+  #define DEFAULT_bedKi  3.76
   #define DEFAULT_bedKd 29.2
 
   // FIND YOUR OWN: "M303 E-1 C8 S90" to run autotune on the bed at 90 degreesC for 8 cycles.

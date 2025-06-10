@@ -815,7 +815,7 @@
 
   // Tuned by Sam Pinches on A5S at 75C (18th March, 2019)
   #define DEFAULT_bedKp 175.83
-  #define DEFAULT_bedKi 28.85
+  #define DEFAULT_bedKi  28.85
   #define DEFAULT_bedKd 267.90
 
   // FIND YOUR OWN: "M303 E-1 C8 S90" to run autotune on the bed at 90 degreesC for 8 cycles.

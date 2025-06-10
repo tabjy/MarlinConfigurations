@@ -821,7 +821,7 @@
   // The OEM stock model uses a clone MK3a 300 @ 12V with no insulation and can reach a maximum 70C at 25C ambient.
   // Tested with commands: "M304 P100 I20 D500" and "M303 C10 E-1 S65"
   #define DEFAULT_bedKp 379.43
-  #define DEFAULT_bedKi 72.37
+  #define DEFAULT_bedKi  72.37
   #define DEFAULT_bedKd 497.33
 
 #else

@@ -818,8 +818,8 @@
   // from FOPDT model - kp=.39 Tp=405 Tdead=66, Tc set to 79.2, aggressive factor of .15 (vs .1, 1, 10)
 
   // JGAurora A5 (tuned at 70C)
-  #define DEFAULT_bedKp 10.00
-  #define DEFAULT_bedKi .023
+  #define DEFAULT_bedKp  10.00
+  #define DEFAULT_bedKi   0.023
   #define DEFAULT_bedKd 305.4
 
   // FIND YOUR OWN: "M303 E-1 C8 S90" to run autotune on the bed at 90 degreesC for 8 cycles.

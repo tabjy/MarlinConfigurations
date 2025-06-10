@@ -815,8 +815,8 @@
   //#define PID_BED_DEBUG     // Print Bed PID debug data to the serial port. Use 'M303 D' to enable/disable.
 
   // 12v (120 watt?) MK2a PCB Heatbed into 4mm borosilicate (Geeetech Průša i3 Pro, Pro/B/C/X)
-  #define DEFAULT_bedKp 10.00
-  #define DEFAULT_bedKi .023
+  #define DEFAULT_bedKp  10.00
+  #define DEFAULT_bedKi   0.023
   #define DEFAULT_bedKd 305.4
 
   // FIND YOUR OWN: "M303 E-1 C8 S90" to run autotune on the bed at 90 degreesC for 8 cycles.

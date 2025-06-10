@@ -831,7 +831,7 @@
 
   // BIQU BX
   #define DEFAULT_bedKp 121.74
-  #define DEFAULT_bedKi 23.77
+  #define DEFAULT_bedKi  23.77
   #define DEFAULT_bedKd 415.57
 
   // FIND YOUR OWN: "M303 E-1 C8 S90" to run autotune on the bed at 90 degreesC for 8 cycles.

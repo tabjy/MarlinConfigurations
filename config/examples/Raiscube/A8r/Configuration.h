@@ -812,7 +812,7 @@
   // Raiscube A8r
   // original Bed + generic Build surface sheet (PID-Autotune: M303 E-1 S60 C5):
   #define DEFAULT_bedKp 153.92
-  #define DEFAULT_bedKi 28.47
+  #define DEFAULT_bedKi  28.47
   #define DEFAULT_bedKd 554.84
 
   // FIND YOUR OWN: "M303 E-1 C8 S90" to run autotune on the bed at 90 degreesC for 8 cycles.

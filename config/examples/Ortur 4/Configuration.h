@@ -811,7 +811,7 @@
 
   // Ortur 4 V1 90
   #define DEFAULT_bedKp 190.43
-  #define DEFAULT_bedKi 30.19
+  #define DEFAULT_bedKi  30.19
   #define DEFAULT_bedKd 800.81
 
   // FIND YOUR OWN: "M303 E-1 C8 S90" to run autotune on the bed at 90 degreesC for 8 cycles.
