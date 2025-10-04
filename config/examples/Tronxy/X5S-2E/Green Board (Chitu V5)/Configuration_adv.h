@@ -689,8 +689,8 @@
  * Multiple extruders can be assigned to the same pin in which case
  * the fan will turn on when any selected extruder is above the threshold.
  */
-#define E0_AUTO_FAN_PIN FAN2_PIN  //Tronxy X5S-2e   E0 & E1 fan pin
-#define E1_AUTO_FAN_PIN FAN2_PIN  //Tronxy X5S-2e   E0 & E1 fan pin
+#define E0_AUTO_FAN_PIN FAN2_PIN  // Tronxy X5S-2e   E0 & E1 fan pin
+#define E1_AUTO_FAN_PIN FAN2_PIN  // Tronxy X5S-2e   E0 & E1 fan pin
 #define E2_AUTO_FAN_PIN -1
 #define E3_AUTO_FAN_PIN -1
 #define E4_AUTO_FAN_PIN -1
