@@ -4736,6 +4736,11 @@
 //
 //#define PINS_DEBUGGING
 
+//
+// M265 - I2C Scanner
+//
+//#define I2C_SCANNER
+
 // Enable Tests that will run at startup and produce a report
 //#define MARLIN_TEST_BUILD
 
