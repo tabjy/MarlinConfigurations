@@ -1408,6 +1408,11 @@
  */
 // P905H works with s-curve but I saw no quality improvements
 //#define S_CURVE_ACCELERATION
+#if ENABLED(S_CURVE_ACCELERATION)
+  // Define to use 4th instead of 6th order motion curve
+  //#define S_CURVE_FACTOR 0.25    // Initial and final acceleration factor, ideally 0.1 to 0.4.
+                                   // Shouldn't generally require tuning.
+#endif
 
 //===========================================================================
 //============================= Z Probe Options =============================
