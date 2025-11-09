@@ -1069,7 +1069,8 @@
   #define DELTA_RADIUS_TRIM_TOWER       { 0.0, 0.0, 0.0 } // (mm)
   #define DELTA_DIAGONAL_ROD_TRIM_TOWER { 0.0, 0.0, 0.0 } // (mm)
 
-#endif
+
+#endif // DELTA
 
 // @section scara
 
