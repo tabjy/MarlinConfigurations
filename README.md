@@ -12,6 +12,13 @@ The `master` branch (the branch you're viewing) in this repository tracks config
 
 Not much. Mostly small tweaks in configurations. See [diffs here](https://github.com/MarlinFirmware/Configurations/compare/release-2.1.2.5...tabjy:MarlinConfigurations:master).
 
+They boil down to:
+
+- Enables BL (CR) touch and configures offsets (yours might be different!)
+- Enables junction deviation 
+- Enables muting the buzzer
+- Enables linear advance and configures extruder jerk
+
 ## Downloads
 
 Compiled firmware can be found in the GitHub [release page](https://github.com/tabjy/MarlinConfigurations/releases). 

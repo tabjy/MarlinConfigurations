@@ -28,7 +28,7 @@
  */
 
 // Is the BLTouch option installed?
-//#define CR10V3_BLTOUCH
+#define CR10V3_BLTOUCH
 
 /**
  * Configuration.h
@@ -1255,7 +1255,7 @@
  * When changing speed and direction, if the difference is less than the
  * value set here, it may happen instantaneously.
  */
-#define CLASSIC_JERK // Fine for mendel-style machines
+//#define CLASSIC_JERK // Fine for mendel-style machines
 #if ENABLED(CLASSIC_JERK)
   #define DEFAULT_XJERK 10.0
   #define DEFAULT_YJERK 10.0
@@ -1275,7 +1275,7 @@
   #endif
 #endif
 
-#define DEFAULT_EJERK    5.0  // May be used by Linear Advance
+#define DEFAULT_EJERK    10.0  // May be used by Linear Advance
 
 /**
  * Junction Deviation Factor
@@ -1532,7 +1532,7 @@
  *     |    [-]    |
  *     O-- FRONT --+
  */
-#define NOZZLE_TO_PROBE_OFFSET { 46, 2, 0 }
+#define NOZZLE_TO_PROBE_OFFSET { 43.5, 0, -1 }
 
 // Most probes should stay away from the edges of the bed, but
 // with NOZZLE_AS_PROBE this can be negative for a wider probing area.
