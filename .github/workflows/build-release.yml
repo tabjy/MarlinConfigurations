@@ -1,0 +1,88 @@
+name: Build and release
+
+on:
+  workflow_dispatch:
+    inputs:
+      marlin_repo:
+        description: 'Marlin repository'
+        required: true
+        default: 'MarlinFirmware/Marlin'
+      marlin_ref:
+        description: 'Marlin tagged release ref'
+        required: true
+        default: '2.1.2.5'
+      config_repo:
+        description: 'Use MarlinFirmware/Configurations for example configs'
+        required: false
+        default: ''
+      config_ref:
+        description: 'Ref for the configuration repository'
+        required: false
+        default: ''
+      config_path:
+        description: 'Path to machine configurations (config/examples/<?>)'
+        required: true
+        default: 'Creality/CR-10 V3'
+      relase_tag:
+        description: 'Tag for the release'
+        required: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v6
+        with:
+          repository: ${{ github.event.inputs.config_repo }}
+          ref: ${{ github.event.inputs.config_ref }}
+          path: Configurations
+
+      - name: Clone Marlin source
+        uses: actions/checkout@v6
+        with:
+          repository: ${{ github.event.inputs.marlin_repo }}
+          ref: ${{ github.event.inputs.marlin_ref }}
+          path: Marlin
+
+      - name: Copy configuration files
+        run: |
+          CONFIG="Configurations/config/examples/${{ github.event.inputs.config_path }}"
+          if [ ! -d "$CONFIG" ]; then
+            echo "Config for ${{ github.event.inputs.config_path }} not found in '$CONFIG'"
+            exit 1
+          fi 
+
+          # Copy all .h files from the directory into the Marlin subfolder
+          cp "$CONFIG"/*.h Marlin/Marlin
+          
+      - name: Select Python 3.9
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.9'
+          architecture: 'x64'
+
+      - name: Install PlatformIO
+        run: |
+          pip install -U platformio
+          pio upgrade --dev
+          pio pkg update --global
+
+      - name: Build firmware
+        working-directory: ./Marlin
+        run: |
+          make marlin
+
+      - name: Create Release
+        uses: ncipollo/release-action@v1
+        with:
+          name: v${{ github.event.inputs.marlin_ref }} for ${{ github.event.inputs.config_path }}
+          tag: ${{ github.event.inputs.relase_tag }}
+          artifacts: "Marlin/.pio/build/*/firmware.hex"
+          commit: ${{ github.event.inputs.config_ref }}
+          body: |
+            ## Marlin Firmware v${{ github.event.inputs.marlin_ref }} for ${{ github.event.inputs.config_path }}
+
+            Built from [${{ github.event.inputs.marlin_repo }}](https://github.com/${{ github.event.inputs.marlin_repo }}) @ [${{ github.event.inputs.marlin_ref }}](https://github.com/tree/${{ github.event.inputs.marlin_ref }})
+            with configurations from [${{ github.event.inputs.config_repo }}](https://github.com/${{ github.event.inputs.config_repo }}) @ [${{ github.event.inputs.config_ref }}](https://github.com/tree/${{ github.event.inputs.config_ref }}/config/examples/${{ github.event.inputs.config_path }})

@@ -1,14 +1,31 @@
-# Configurations
-Pre-tested Configurations for Marlin Firmware 2.1.2.5
+# Tabjy's Marlin firmware builds 
 
-Marlin Firmware is configured using two files:
+This repository contains my (opinionated) builds of the Marlin 3D printer firmware. Currently I only build for [Creality CR-10 V3](config/examples/Creality/CR-10 V3) since it's the only machine I own.
 
-- `Configuration.h` contains core configuration options like machine geometry.
-- `Configuration_adv.h` contains optional settings for advanced and low level features.
+<!-- TODO: update release tag and link if needed -->
 
-For Graphical LCD these files may also be included:
+The `master` branch (the branch you're viewing) in this repository tracks configurations for the latest stable Marlin release. Upon the last update, the latest release is tagged [`2.1.2.5`](https://github.com/MarlinFirmware/Marlin/tree/2.1.2.5).
 
-- `_Bootscreen.h` provides the bitmap for a custom Boot Screen.
-- `_Statusscreen.h` provides bitmaps to customize the Status Screen.
+## What's so opinionated?
 
-See the [Configuration page](https://marlinfw.org/docs/configuration/configuration.html) for more information about configuration and individual configuration options.
+<!-- TODO: update release tag and link if needed -->
+
+Not much. Mostly small tweaks in configurations. See [diffs here](https://github.com/MarlinFirmware/Configurations/compare/release-2.1.2.5...tabjy:MarlinConfigurations:master).
+
+## Downloads
+
+Compiled firmware can be found in the GitHub [release page](https://github.com/tabjy/MarlinConfigurations/releases). 
+
+*No warranty is given, and no responsibility can be accepted if there are problems. Flash at your own risk!*
+
+## Can you build for my machine?
+
+Nope, but you can easily do that yourself:
+
+1. Fork this repository
+2. Go to the *Action* tab; select *Build and release* workflow (`https://github.com/`**`<YOUR_USERNAME>`**`/MarlinConfigurations/actions/workflows/build-release.yml`)
+3. Manually trigger a build, with your machine configuration path:
+
+    ![manual_build.png](.github/images/manual_build.png)
+
+4. Watch it goes; find the firmware in your repository's release page
